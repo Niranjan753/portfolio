@@ -112,14 +112,12 @@ function App() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 text-center mb-6 font-['Orbitron'] leading-tight tracking-wider"
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-6 font-['Orbitron'] leading-tight tracking-wider cyberpunk-title"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
             >
-              <span className="neon-text-effect glitch" data-text="Welcome to My Cyberpunk Portfolio">
-                Welcome to My Cyberpunk Portfolio
-              </span>
+              Welcome to My Cyberpunk Portfolio
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl font-semibold text-cyan-300 text-center font-mono mb-4 tracking-wide glitch"

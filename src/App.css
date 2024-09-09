@@ -71,4 +71,21 @@ body.cyberpunk {
   }
 }
 
+.neon-text-effect {
+  display: inline-block;
+  word-break: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .neon-text-effect {
+    font-size: 1.5rem;
+  }
+}
+
 /* ... (keep the rest of your existing CSS) ... */
+
+.cyberpunk-title {
+  text-shadow: 0 0 10px rgba(94, 234, 212, 0.7);
+}
