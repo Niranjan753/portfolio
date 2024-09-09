@@ -1,0 +1,74 @@
+body {
+  background-color: #111827;
+  color: #5eead4;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #5eead4;
+}
+
+body.cyberpunk {
+  background-color: #111827;
+  color: #5eead4;
+}
+
+.neon-text {
+  text-shadow: 
+    0 0 5px #5eead4,
+    0 0 10px #5eead4,
+    0 0 20px #5eead4,
+    0 0 40px #5eead4,
+    0 0 80px #5eead4;
+}
+
+.skill-card, .experience-card {
+  background: rgba(17, 24, 39, 0.8);
+  /* Remove the border: 1px solid #5eead4; */
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover, .experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.5);
+}
+
+.cyberpunk-animation {
+  margin: 50px 0;
+  perspective: 1000px;
+}
+
+.glitch-container {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* ... (keep the rest of your existing CSS) ... */
